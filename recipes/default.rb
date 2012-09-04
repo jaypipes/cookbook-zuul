@@ -71,7 +71,7 @@ template "#{conf_path}" do
   })
 end
 
-template "#{lagging_conf_path}" do
+template "#{logging_conf_path}" do
   source "logging.conf.erb"
   notifies :restart, "service[zuul]"
   variables({
